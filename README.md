@@ -8,7 +8,7 @@ Smaller experiments can live here. When something grows into a more complete too
 
 | Project | What it does | Status |
 | --- | --- | --- |
-| UX Design Companion | Helps explore UX ideas, build HTML prototypes and review interfaces using established UX principles. | Separate repository planned: `willbergin/ux-design-companion` |
+| UX Design Companion | Helps explore UX ideas, build HTML prototypes and review interfaces using established UX principles. | [ux-design-companion-agent](https://github.com/willbergin/ux-design-companion-agent) |
 
 ## How I'll organise this repository
 
