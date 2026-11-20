@@ -20,3 +20,10 @@ As I add resources, I'll group them by purpose:
 - `config/` for shared setup files
 
 Not every tool needs its own repository. The aim is to keep the things I reuse easy to find without turning this repo into a collection of unrelated projects.
+
+## Issue delivery playbook
+
+Use the Lead, Builder, and Reviewer roles to take a Linear issue through a GitHub pull request to a verified Vercel preview, with Supabase migration checks when needed.
+
+- [Set up the playbook in an app repository](config/setup.md)
+- [Read the issue delivery workflow](workflow.md)
