@@ -6,9 +6,16 @@ The canonical files live in `ai-playbook/` at the application repo root. Run the
 
 ```sh
 mkdir -p .agents/skills
-for skill in shape-issue implement-issue review-issue release
+for skill_file in ai-playbook/skills/*/SKILL.md
 do
-  ln -s "../../ai-playbook/skills/$skill" ".agents/skills/$skill"
+  [ -f "$skill_file" ] || continue
+  skill_dir=${skill_file%/SKILL.md}
+  skill_name=${skill_dir##*/}
+  destination=".agents/skills/$skill_name"
+  if [ -e "$destination" ] || [ -L "$destination" ]; then
+    continue
+  fi
+  ln -s "../../$skill_dir" "$destination"
 done
 ```
 
@@ -18,9 +25,16 @@ Start a session in the app repo. Use the issue-to-preview prompt in the [setup g
 
 ```sh
 mkdir -p .claude/skills
-for skill in shape-issue implement-issue review-issue release
+for skill_file in ai-playbook/skills/*/SKILL.md
 do
-  ln -s "../../ai-playbook/skills/$skill" ".claude/skills/$skill"
+  [ -f "$skill_file" ] || continue
+  skill_dir=${skill_file%/SKILL.md}
+  skill_name=${skill_dir##*/}
+  destination=".claude/skills/$skill_name"
+  if [ -e "$destination" ] || [ -L "$destination" ]; then
+    continue
+  fi
+  ln -s "../../$skill_dir" "$destination"
 done
 ```
 
@@ -29,3 +43,11 @@ If the repo uses `CLAUDE.md`, add `@AGENTS.md` there to load shared project inst
 ## Other harnesses
 
 Give the model the project instructions, `workflow.md`, and the required role and skill file. Supply tool access or provide evidence manually. Resume using the same handoff.
+
+## Troubleshooting
+
+| What you see | What to check |
+| --- | --- |
+| A skill is missing | Confirm the session started in the app repo and the skill link resolves to a folder with a `SKILL.md`. Restart the session after installing links if needed. You can also give the skill file path directly. |
+| An older skill opens | Check whether a pre-existing link or copy with the same name points elsewhere. The setup snippets preserve existing destinations so you can reconcile them yourself. |
+| A tracker, deployment or check is inaccessible | Confirm the connection and project mapping in `AGENTS.md`. Use a draft or manual evidence where appropriate and record any required check still outstanding. |
