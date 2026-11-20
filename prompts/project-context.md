@@ -9,3 +9,6 @@
 - Supabase local, preview, and production targets by name or reference
 - Migration directory, local reset procedure, test fixtures, and remote migration process
 - Production approval, sequencing, and recovery process
+- Playwright commands, critical user journeys, test accounts or fixtures, and report location
+- Error monitoring project and release mapping, plus analytics events where applicable
+- AI provider and model configuration keys, eval command, and acceptance thresholds where applicable

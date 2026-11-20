@@ -19,6 +19,8 @@ Use actual tool results as evidence. Record unavailable capabilities or failed c
 
 | When | Skill or prompt |
 | --- | --- |
+| Set up the playbook in an app repo | [bootstrap-project](skills/bootstrap-project/SKILL.md) |
+| Record a consequential project decision | [Decision record](prompts/decision-record.md) |
 | Capture a bug or idea mid-task | [create-issue](skills/create-issue/SKILL.md) |
 | Shape an unsettled user-facing flow before Build | [Design handoff](prompts/design-handoff.md) |
 | Update docs after implementation and before Verify | [document](skills/document/SKILL.md) |
