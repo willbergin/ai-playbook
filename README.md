@@ -27,3 +27,4 @@ Use the Lead, Builder, and Reviewer roles to take a Linear issue through a GitHu
 
 - [Set up the playbook in an app repository](config/setup.md)
 - [Read the issue delivery workflow](workflow.md)
+- [Find skills for issue capture, peer review, documentation, learning, and recovery](workflow.md#skills-to-use-as-needed)

@@ -20,6 +20,8 @@ For a new project, start with:
 
 Start review in a fresh session if your harness cannot delegate independently. Give it the issue, PR, commit SHA, and preview. The same files work with another provider. A chat-only model can use pasted files and return drafts or review notes based on supplied evidence.
 
+For a one-off task, name the skill or ask the harness to read its `SKILL.md` directly. For example, “Use create-issue to capture this bug, then resume the current task.” See the [skill index](../workflow.md#skills-to-use-as-needed) for when to invoke each one.
+
 ## Connect services
 
 - Linear uses the official MCP server where available. A Linear API client is an equivalent. Without write access, return a ready-to-paste change.

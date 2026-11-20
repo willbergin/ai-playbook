@@ -7,6 +7,8 @@
 - Checks run and results
 - Preview URL, deployment status, and matching commit
 - Database target and migration evidence, if applicable
+- Documentation impact and updates, if applicable
+- Peer review dispositions, if applicable
 - Review verdict and reviewed SHA
 - Production deployment and smoke checks, if applicable
 - Blockers and next action
