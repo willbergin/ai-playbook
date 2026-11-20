@@ -7,6 +7,7 @@
 - Checks run and results, including browser test artifacts and model eval evidence where applicable
 - Preview URL, deployment status, and matching commit
 - Database target and migration evidence, if applicable
+- Instrumentation checks and evidence, if applicable
 - Documentation impact and updates, if applicable
 - Peer review dispositions, if applicable
 - Review verdict and reviewed SHA

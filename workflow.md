@@ -23,6 +23,9 @@ Use actual tool results as evidence. Record unavailable capabilities or failed c
 | Record a consequential project decision | [Decision record](prompts/decision-record.md) |
 | Capture a bug or idea mid-task | [create-issue](skills/create-issue/SKILL.md) |
 | Shape an unsettled user-facing flow before Build | [Design handoff](prompts/design-handoff.md) |
+| Verify a matching Vercel deployment with browser tests | [verify-preview](skills/verify-preview/SKILL.md) |
+| Compare a model, provider, or prompt change before review | [evaluate-ai-change](skills/evaluate-ai-change/SKILL.md) |
+| Plan feature analytics and error reporting | [Instrumentation brief](prompts/instrument-feature.md) |
 | Update docs after implementation and before Verify | [document](skills/document/SKILL.md) |
 | Get a second model’s opinion on a candidate commit | [peer-review](skills/peer-review/SKILL.md) and [review prompt](prompts/peer-review.md) |
 | Pause to understand unfamiliar code or a decision | [learning-opportunity](skills/learning-opportunity/SKILL.md) |

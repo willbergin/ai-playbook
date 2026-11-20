@@ -9,9 +9,9 @@ Linear issue, acceptance criteria, candidate commit, diff, and candidate preview
 
 ## Procedure
 
-1. Read the issue and diff. Check that the preview is built from the candidate commit and uses the intended nonproduction database when applicable.
+1. Read the issue and diff. Use [verify-preview](../verify-preview/SKILL.md) for Vercel and browser evidence when the issue requires a preview.
 2. For each criterion, record how it was checked and what happened. Check relevant negative paths and existing behavior nearby. Use test accounts and fixtures for permission checks.
-3. Compare the candidate commit's GitHub checks and local results against what the repo requires. Link required browser reports and AI evaluations to the candidate SHA when applicable. Mark any criterion without evidence as unverified.
+3. Compare the candidate commit's GitHub checks and local results against what the repo requires. Link required browser reports to the candidate SHA. For model or prompt changes, check the Builder’s [evaluation report](../evaluate-ai-change/SKILL.md) against project thresholds. Mark any criterion without evidence as unverified.
 4. Report each finding with severity, location or user journey, expected and observed behavior, and suggested correction.
 
 ## Output and stop

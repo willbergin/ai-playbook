@@ -14,6 +14,8 @@ Issue and acceptance criteria, repository instructions, and target environments.
 3. Run the repo's applicable tests, lint, type checks, and build. Capture command results. For migration changes, record the upgrade path and compatibility with the running app.
 4. When authorized, push to GitHub and create a PR or update the existing one. Link the Linear issue, check the GitHub status checks for the candidate commit, and wait for the matching Vercel preview when available. Record deployment failure or missing access separately from test results.
 
+5. For a change to an app’s model, provider, or prompt, use [evaluate-ai-change](../evaluate-ai-change/SKILL.md) and include its report in the handoff.
+
 ## Output and stop
 
 Fill out the handoff with the commit, PR, check results, preview URL and status, database target, and known gaps. Hand the candidate to review.
