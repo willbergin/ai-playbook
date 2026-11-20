@@ -1,6 +1,6 @@
 ---
 name: diagnose-failure
-description: Trace a failed GitHub check, Vercel deployment, Supabase migration, or production application error to its cause.
+description: Trace a failed CI check, deployment, database migration, or production application error to its cause.
 ---
 
 1. Identify the failing step, candidate SHA, and environment. Read the relevant check output, deployment logs, migration history, or the monitoring event with its environment and release. Record the first actionable error and any gaps in access.

@@ -1,14 +1,17 @@
 # Project instructions
 
-- GitHub repository URL and owner/repo slug
-- GitHub Actions workflows or other required GitHub checks, and branch protection or rulesets
-- Production branch
+- Stack profile or project-specific mapping
+- Issue tracker, team or project, states, and issue lookup and update methods
+- Repository URL, change request lookup, and candidate revision identifier
+- Required CI checks, artifact locations, and merge rules
+- Production branch or release trigger
 - Install, build, lint, typecheck, test, and smoke-check commands
-- Linear team, project, and status mapping
-- Vercel project, preview setup, and deployment URL lookup
-- Supabase local, preview, and production targets by name or reference
-- Migration directory, local reset procedure, test fixtures, and remote migration process
+- Preview lookup, revision proof, and deployment-specific URL
+- Local, preview, and production data targets, and how to confirm environment isolation
+- Migration directory, reset procedure, fixtures, and production migration process
+- Browser test command, critical journeys, test identities, and report location
 - Production approval, sequencing, and recovery process
-- Playwright commands, critical user journeys, test accounts or fixtures, and report location
 - Error monitoring project and release mapping, plus analytics events where applicable
-- AI provider and model configuration keys, eval command, and acceptance thresholds where applicable
+- AI provider and model configuration keys, evaluation command, and thresholds where applicable
+
+Mark capabilities that do not apply and record evidence gaps for required capabilities. Keep secret values in the approved credential store.

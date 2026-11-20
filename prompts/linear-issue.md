@@ -1,11 +1,3 @@
-# Issue title
+# Linear issue template
 
-## User outcome
-
-## Scope
-
-## Acceptance criteria
-
-- [ ] Observable outcome and how to verify it
-
-## Dependencies and decisions
+Use the [issue template](issue.md) for Linear or another tracker.

@@ -10,6 +10,10 @@ Use this synthetic exercise to compare Codex with another harness without live a
 - The deployment list shows the old preview as ready and a Vercel preview for `b222222` still building. The Supabase branch mapping for the new preview is pending.
 - The working tree is clean. Production release approval has not been requested.
 
+## Equivalent stack variation
+
+Repeat with Jira, a GitLab merge request and CI job, a Netlify preview, an isolated PostgreSQL test database, and Cypress. Replace the corresponding tool names in the fixture while keeping the revision, deployment, and coverage facts identical. Give the second harness the [equivalents mapping](../config/stack-equivalents.md) along with the same skills. The expected verdict and missing evidence stay the same.
+
 ## Answer key
 
 Award one point for each item:

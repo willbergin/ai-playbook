@@ -1,4 +1,13 @@
-# Project stack
+# Reference stack
+
+Use this profile for Linear, GitHub, Vercel, Supabase, and Playwright. For other tooling, follow the [stack equivalents guide](stack-equivalents.md). The app’s project context supplies its actual targets and commands.
+
+## Connect the reference tools
+
+- Read and update Linear via MCP or the API where authorised. Use the team’s configured states. [Linear MCP](https://linear.app/docs/mcp)
+- Use the GitHub connector or CLI for pull requests and checks. Inspect branch protection before release.
+- Connect the repo to Vercel and use deployment metadata to match a preview to the candidate commit. [Vercel Git deployments](https://vercel.com/docs/git)
+- Use versioned Supabase migrations. Confirm the preview’s database mapping before running browser journeys against it. [Supabase preview branches on Vercel](https://supabase.com/docs/guides/integrations/vercel-preview-branches)
 
 ## Default for a new TypeScript web app
 
